@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TYT - AYT - YDİL (YKS)</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Assistant:400,700|Poppins:400,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+
+  <div class="container">
+
+    
+    <!-- partial:index.partial.html -->
+    <form method="POST" name="form1" onsubmit="return sendData();" action="<?php echo $_SERVER['PHP_SELF']; ?>"></form>
+    <div class="container">
+      <div class="row">
+        <table>
+          <thead>
+            <tr class="pricing-top-heading">
+              <th class="free">TYT</th>
+              <th class="basic">AYT</th>
+              <th class="pro">DİL</th>
+            </tr>
+            <tr class="pricing-bottom-heading small">
+              <th class="free"><strong>TYT:</strong> Temel Yeterlilik Testi</th>
+              <th class="basic"><strong>AYT:</strong> Alan Yeterlilik Testi</th>
+              <th class="pro"><strong>DİL:</strong> Dil Bilgisi Testi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- SECTION 1 -->
+            <tr>
+              <td
+                class="collapsible-section-header"
+                style="background-color: #f26b42"
+                colspan="3"
+              >
+                <a data-toggle="collapse" href="#collapse_section_one"
+                  >1.OTURUM</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th style="background:#f26b42;margin:15px 0px 10px;border-radius:0;color:#fff;"><center>Ders Adı</center></th>
+              <th style="background:#58c5c7;margin:15px 0px 10px;border-radius:0;color:#fff;"><center>Doğru</center></th>
+              <th style="background:#a5c653;margin:15px 0px 10px;border-radius:0;color:#fff;"><center>Yanlış</center></th>
+            </tr>
+            <tr>
+              <td>Türkçe<sub>(40)</sub></td>
+      <td><input type="number" name="tyt_turkce_dogru" class="form-control" placeholder="" value="" tabindex="2" ></td>
+      <td><input type="number" name="tyt_turkce_yanlis" class="form-control" placeholder="" value=""  tabindex="3" ></td>
+            </tr>
+            <tr>
+              <td>Sosyal<sub>(20)</sub></td>
+      <td><input type="number" name="tyt_sosyal_dogru" class="form-control" placeholder="" value="" tabindex="4" ></td>
+      <td><input type="number" name="tyt_sosyal_yanlis" class="form-control" placeholder="" value="" tabindex="5" ></td>
+            </tr>
+            <tr>
+              <td>Matematik<sub>(40)</sub></td>
+      <td><input type="number" name="tyt_matematik_dogru" class="form-control" placeholder="" value="" tabindex="6" ></td>
+      <td><input type="number" name="tyt_matematik_yanlis" class="form-control" placeholder="" value="" tabindex="7" ></td>
+            </tr>
+            <tr>
+              <td>Fen<sub>(20)</sub></td>
+      <td><input type="number" name="tyt_fen_dogru" class="form-control" placeholder="" value="" tabindex="8" ></td>
+      <td><input type="number" name="tyt_fen_yanlis" class="form-control" placeholder="" value="" tabindex="9" ></td>
+            </tr>
+
+            <!-- SECTION 2 -->
+            <tr>
+              <td
+                class="collapsible-section-header"
+                style="background-color: #58c5c7"
+                colspan="3"
+              >
+                <a data-toggle="collapse" href="#collapse_section_two"
+                  >2.OTURUM</a
+                >
+              </td>
+              <tr>
+                <th style="background:#f26b42;margin:15px 0px 10px;border-radius:0;color:#fff;"><center>Ders Adı</center></th>
+                <th style="background:#58c5c7;margin:15px 0px 10px;border-radius:0;color:#fff;"><center>Doğru</center></th>
+                <th style="background:#a5c653;margin:15px 0px 10px;border-radius:0;color:#fff;"><center>Yanlış</center></th>
+              </tr>
+
+              <tr>
+                <td>Matematik<sub>(40)</sub></td>
+      <td><input type="number" name="ayt_matematik_dogru" class="form-control" value="" placeholder="" tabindex="10" ></td>
+      <td><input type="number" name="ayt_matematik_yanlis" class="form-control" placeholder="" value="" tabindex="11" ></td>
+              </tr>
+              <tr>
+                <td>Fizik<sub>(14)</sub></td>
+                <td><input type="number" name="ayt_fizik_dogru" class="form-control" placeholder="" value="" tabindex="12" ></td>
+                <td><input type="number" name="ayt_fizik_yanlis" class="form-control" placeholder="" value="" tabindex="13" ></td>
+              </tr>
+              <tr>
+                <td>Kimya<sub>(13)</sub></td>
+      <td><input type="number" name="ayt_kimya_dogru" class="form-control" placeholder="" value="" tabindex="14" ></td>
+      <td><input type="number" name="ayt_kimya_yanlis" class="form-control" placeholder="" value="" tabindex="15" ></td>
+              </tr>
+              <tr>
+                <td>Biyoloji<sub>(13)</sub></td>
+      <td><input type="number" name="ayt_biyoloji_dogru" class="form-control" placeholder="" value="" tabindex="16" ></td>
+      <td><input type="number" name="ayt_biyoloji_yanlis" class="form-control" placeholder="" value="" tabindex="17" ></td>
+              </tr>
+              <tr>
+                <td>Edebiyat<sub>(24)</sub></td>
+      <td><input type="number" name="ayt_edebiyat_dogru" class="form-control" placeholder="" value="" tabindex="18" ></td>
+      <td><input type="number" name="ayt_edebiyat_yanlis" class="form-control" placeholder="" value="" tabindex="19" ></td>
+              </tr>
+              <tr>
+                <td>Tarih-1<sub>(10)</sub></td>
+      <td><input type="number" name="ayt_tarih_dogru" class="form-control" placeholder="" value="" tabindex="20" ></td>
+      <td><input type="number" name="ayt_tarih_yanlis" class="form-control" placeholder="" value="" tabindex="21" ></td>
+              </tr>
+              <tr>
+                <td>Coğrafya-1<sub>(6)</sub></td>
+      <td><input type="number" name="ayt_cografya1_dogru" class="form-control" placeholder="" value="" tabindex="22" ></td>
+      <td><input type="number" name="ayt_cografya1_yanlis" class="form-control" placeholder="" value="" tabindex="23" ></td>
+              </tr>
+              <tr>
+                <td>Tarih-2<sub>(11)</sub></td>
+      <td><input type="number" name="ayt_tarih2_dogru" class="form-control" placeholder="" value="" tabindex="24" ></td>
+      <td><input type="number" name="ayt_tarih2_yanlis" class="form-control" placeholder="" value="" tabindex="25" ></td>
+              </tr>
+              <tr>
+                <td>Coğrafya-2<sub>(11)</sub></td>
+      <td><input type="number" name="ayt_cografya2_dogru" class="form-control" placeholder="" value="" tabindex="26" ></td>
+      <td><input type="number" name="ayt_cografya2_yanlis" class="form-control" placeholder="" value="" tabindex="27" ></td>
+              </tr>
+              <tr>
+                <td>Felsefe<sub>(12)</sub></td>
+      <td><input type="number" name="ayt_felsefe_dogru" class="form-control" placeholder="" value="" tabindex="28" ></td>
+      <td><input type="number" name="ayt_felsefe_yanlis" class="form-control" placeholder="" value="" tabindex="29" ></td>
+              </tr>
+              <tr>
+                <tr>
+                  <td>Din<sub>(6)</sub></td>
+                  <td><input type="number" name="ayt_din_dogru" class="form-control" placeholder="" value="" tabindex="30" ></td>
+                  <td><input type="number" name="ayt_din_yanlis" class="form-control" placeholder="" value="" tabindex="31" ></td>
+                
+                </tr>
+
+            <!-- SECTION 3 -->
+            <tr>
+              <td
+                class="collapsible-section-header"
+                style="background-color: #a5c653"
+                colspan="3"
+              >
+                <a data-toggle="collapse" href="#collapse_section_three"
+                  >3.OTURUM</a
+                >
+              </td>
+              <tr>
+                <th style="background:#f26b42;margin:15px 0px 10px;border-radius:0;color:#fff;"><center>Ders Adı</center></th>
+                <th style="background:#58c5c7;margin:15px 0px 10px;border-radius:0;color:#fff;"><center>Doğru</center></th>
+                <th style="background:#a5c653;margin:15px 0px 10px;border-radius:0;color:#fff;"><center>Yanlış</center></th>
+              </tr>
+            </tr>
+            <tr>
+              <td>İngilizce<sub>(80)</sub></td>
+              <td><input type="number" name="ayt_ydil_dogru" class="form-control" placeholder="" value="" tabindex="32" ></td>
+              <td><input type="number" name="ayt_ydil_yanlis" class="form-control" placeholder="" value=""  tabindex="33" ></td>
+            </tr>
+            <table><br><td>
+            <input type="submit" class="btn btn-outline-primary btn-block" name="ykshesapla" value="Hesapla" tabindex="34"></td>
+            <td><input type="reset" class="btn btn-outline-danger btn-block" name="temizle" value="Temizle" tabindex="35" onclick="this.form.submit();this.form.reset();"></td>
+          </table>
+            <table>
+
+                
+              <tr>
+              <th style="background:#f26b42;margin:15px 0px 10px;border-radius:0;color:#fff;"><center>Puan Tipi</center></th>
+              <th style="background:#58c5c7;margin:15px 0px 10px;border-radius:0;color:#fff;"><center>Ham</center></th>
+              <th style="background:#a5c653;margin:15px 0px 10px;border-radius:0;color:#fff;"><center>Yerleştirme</center></th>
+            </tr>
+            <tr>
+                <td>TYT Puanı</td>
+                <td><input type="number" name="hampuan" class="form-control" value="" disabled placeholder=""></td>
+                <td><input type="number" name="yerpuan" class="form-control" value="" disabled placeholder=""></td>
+              </tr><tr>
+                <td>Sayısal</td>
+                <td><input type="number" name="ykshamsayisalpuan" class="form-control" value="" disabled placeholder=""></td>
+                <td><input type="number" name="yksyersayisalpuan" class="form-control" value="" disabled placeholder=""></td>
+              </tr>
+              <tr>
+                <td>Sözel</td>
+                <td><input type="number" name="ykshamsozelpuan" class="form-control" value="" disabled placeholder=""></td>
+                <td><input type="number" name="yksyersozelpuan" class="form-control" value="" disabled placeholder=""></td>
+              </tr>
+              <tr>
+                <td>Eşit Ağırlık</td>
+                <td><input type="number" name="ykshameapuan" class="form-control" value="" disabled placeholder=""></td>
+                <td><input type="number" name="yksyereapuan" class="form-control" value="" disabled placeholder=""></td>
+              </tr>
+              <tr>
+                <td>Dil</td>
+                <td><input type="number" name="ykshamdilpuan" class="form-control" value="" disabled placeholder=""></td>
+                <td><input type="number" name="yksyerdilpuan" class="form-control" value="" disabled placeholder=""></td>
+              </tr>
+            </table>
+          </tbody>
+        </table>
+      </form>
+      </div>
+    </div>
+    <!-- /.container -->
+    <!-- partial -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
